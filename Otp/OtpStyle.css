@@ -1,0 +1,73 @@
+
+.cmp-otp_container{
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	align-items: space-around;
+	justify-content: center;
+}
+
+.cmp-otp_userInput{
+	display: flex;
+	justify-content: center;
+}
+
+.cmp-otp_input{
+	margin: 10px;
+	
+	border: none;
+
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+    width: 54px;
+    height: 62px;
+    
+    background: #E7E8E9;
+    border: 1px solid #FFFFFF;
+    /* input field default */
+    
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+
+}
+
+h1{
+	text-align: center;
+	font-family: arimo;
+	color: honeydew;
+}
+
+
+.cmp-otp_con-btn{
+    width: 302px;
+    height: 60px;
+	margin: 25px auto 0px auto;
+	font-family: arimo;
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	cursor: pointer;
+    background: #E7E8E9;
+    box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+    border-radius: 8px;
+}
+.cmp-otp_show-number{
+    margin-bottom: 30px;
+}
+.cmp-otp_show-number p {
+  
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #7D7D7D;
+}
+.cmp-otp_resend{
+    font-size: 16px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.15px;
+margin-top: 20px;
+color: #7D7D7D;
+}

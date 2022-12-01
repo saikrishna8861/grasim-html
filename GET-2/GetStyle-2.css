@@ -1,0 +1,48 @@
+.cmp-get-2-container{
+   
+}
+.cmp-get-2-main-div{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.videoWidth{
+    position: relative;
+    cursor: pointer;
+}
+.cmp-get-2-head-breadCrum p {
+    color: #7D7D7D;
+}
+.videoWidth video{
+    width: -webkit-fill-available;
+}
+#playPause_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  
+}
+.cmp-get-2-author{
+    margin: 10px 0px;
+}
+.cmp-get-2-header{
+    margin: 10px 0px;
+}
+.cmp-get-2-text{
+font-size: 17.7244px;
+line-height: 30px;
+color: #7D7D7D;
+}
+.cmp-get-2-img{
+    display: flex;
+    gap: 10;
+    flex-direction:row;
+   
+}

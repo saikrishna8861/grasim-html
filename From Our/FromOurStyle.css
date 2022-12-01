@@ -1,0 +1,215 @@
+.cmp-fromOur-header-title{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    
+   } 
+.cmp-fromOur-header-title p{
+    text-align: center;
+    font-size: 36px;
+    align-items: center;
+    max-width: 450px;
+    
+   } 
+.cmp-fromOur_main-Box{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 70px 0px;
+}
+.cmp-fromOur_quote-up-icon{
+    position: absolute;
+    left: -55px;
+    top: -40px;
+}
+.cmp-fromOur_quote-down-icon{
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+
+}
+
+.cmp-fromOur_main-container{
+    height: 100%;
+    width: 550px !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  
+    background-color: aqua;
+}
+
+.cmp-fromOur_testimonial .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.cmp-fromOur_testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.cmp-fromOur_img-Box img{
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+margin: auto ;
+}
+.cmp-fromOur_testimonial .cmp-fromOur_slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #464850!important;
+    bottom: -100px !important;
+}
+.cmp-fromOur_slide{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.cmp-fromOur_img{
+    width: 400px;
+    clip-path:circle();
+}
+.cmp-fromOur_dots{
+    bottom: -70px !important;
+}
+.cmp-fromOur_caption{
+    color: black !important;
+    position: unset !important;
+    display: unset !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.cmp-fromOur_caption p{
+  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  .cmp-fromOur_underline {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    margin-bottom: 15px;
+  }
+  .cmp-fromOur_header-subText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+  }
+  .cmp-fromOur_header-subText p{
+    width: 300px;
+    align-items: center;
+    text-align: center;
+  }
+  .cmp-fromOur_underline-gray {
+    width: 197px;
+    height: 2px;
+    top: 10px;
+    border: 3px solid #9b9b9b;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px 1px #a4a5a8;
+  }
+  .cmp-fromOur_underline-black {
+    width: 149px;
+    height: 2px;
+    border: 3px solid #424242;
+    border-radius: 10px;
+    position: relative;
+    bottom: 3px;
+    left: 21px;
+  }
+  .cmp-fromOur_underline-white {
+    width: 91px;
+    height: 2px;
+    border: 3px solid #e4e4e4;
+    border-radius: 10px;
+    position: relative;
+    bottom: 3px;
+    left: 25px;
+  }
+  .cmp-fromOur_caption p{
+    font-size: 18px;
+  }
+  .cmp-fromOur_text{
+    font-size: 20px;
+  }
+@media(max-width:765px){
+    .cmp-fromOur_caption{
+        display: unset !important;
+    } 
+    .cmp-fromOur_quote-up-icon{
+        position: absolute;
+        left: 0px;
+        top: -30px;
+    }
+    .cmp-fromOur_text{
+        font-size: 16px;
+      }
+    .cmp-fromOur_quote-down-icon{
+        position: absolute;
+        right: 0px;
+        bottom: -50px;
+    
+    }
+    .cmp-fromOur_caption p{
+        font-size: 16px;
+        width: 300px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 15px auto;
+      }
+    .cmp-fromOur_underline-gray {
+        width: 143px;
+      }
+      .cmp-fromOur_underline-black {
+        width: 97px;
+      }
+      .cmp-fromOur_underline-white {
+        width: 45px;
+      }
+      .cmp-fromOur-header-title p {
+        font-size: 28px;
+        margin: auto;
+      }
+      .cmp-fromOur_header-subText p{
+        font-size: 14px;
+      }
+      .cmp-fromOur_caption{
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+}
+@media (min-width: 1200px){
+.cmp-fromOur_main-container{
+    max-width: 373px !important;
+}
+}

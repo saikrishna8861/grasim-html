@@ -1,0 +1,191 @@
+body {
+    background: #C6C6C6;
+    display: flex;
+    justify-content: center;
+}
+
+.cmp-sign-in-initial {
+    max-width: 400px;
+
+}
+
+.form-control {
+    background: #E7E8E9;
+    margin-top: 8px;
+    margin-bottom: 42px;
+    min-width: 330px;
+
+
+
+}
+
+
+
+.form-label {
+
+    font-size: 18px;
+    /* padding-bottom: 8px; */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+
+    color: #34383C;
+
+
+
+}
+
+.m-main {
+    margin-top: 42px;
+}
+
+
+
+
+.account-info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.dont-have-an-account-text {
+
+
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+
+    color: #434343;
+
+}
+
+.sign-up-instead-text {
+
+
+
+
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #434343;
+}
+
+
+
+.create-account-button {
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+    width: 302px;
+    height: 60px;
+    background: #E7E8E9;
+    box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+    border-radius: 8px;
+    border: none;
+    margin-top: 60px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.input-box .prefix {
+    font-weight: 300;
+    font-size: 14px;
+    color: #999;
+}
+
+.input-box input {
+    flex-grow: 1;
+    font-size: 14px;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.input-box:focus-within {
+    border-color: #777;
+}
+
+
+
+@media (max-width: 765px) {
+
+
+
+    .form-control {
+        margin-top: 6px;
+        margin-bottom: 20px;
+        min-width: 256px;
+
+
+    }
+
+    .form-label {
+
+        font-size: 14px;
+        /* padding-bottom: 8px; */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15px;
+
+        color: #34383C;
+
+
+
+    }
+
+
+    .button-container {
+
+        width: 100%;
+        padding: 34px 0;
+        background: #EBECF0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        margin-top: 74px;
+
+
+    }
+
+    .create-account-button {
+        display: flex;
+
+        justify-content: center;
+        gap: 10px;
+        width: 302px;
+        height: 60px;
+        background: #E7E8E9;
+        box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+        border-radius: 8px;
+        border: none;
+        margin-top: 0;
+    }
+
+    .m-main {
+        margin: 42px 54px 0px 50px;
+    }
+
+}

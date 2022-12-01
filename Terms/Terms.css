@@ -1,0 +1,112 @@
+.accordion_Terms_main-header {
+    color: unset !important;
+    background-color: unset !important;
+    box-shadow: unset !important;
+    margin: auto !important;
+    border-bottom: 1.5px solid #9b9b9b !important;
+  }
+  
+  .show {
+    display: block;
+  }
+  .accord_main-button {
+    text-align: center;
+    margin: 40px 0px;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+  .cmp-accord_Terms_container {
+    position: relative;
+    top: 0;
+    margin: 30px 0px;
+  }
+  .accord_Terms_main-list {
+    border-bottom: 1.5px solid #9b9b9b !important;
+  }
+  .cmp-accord_Terms_title {
+    font-size: 24px;
+    color: #34383C;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cmp-accord_underline {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    margin-bottom: 15px;
+  }
+  .cmp-accord_underline-gray {
+    width: 197px;
+    height: 2px;
+    border: 3px solid #9b9b9b;
+    background-color: #9b9b9b;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px 1px #a4a5a8;
+  }
+  .cmp-accord_underline-black {
+    width: 149px;
+    height: 2px;
+    border: 3px solid #424242;
+    background-color:#424242;
+    border-radius: 10px;
+    position: relative;
+    bottom: 3px;
+    left: 21px;
+    
+  }
+  .cmp-accord_underline-white {
+    width: 91px;
+    height: 2px;
+    border: 3px solid #e4e4e4;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    position: relative;
+    bottom: 3px;
+    left: 25px;
+  }
+  .cmp-accord_Terms_main-title {
+    margin: 22px 0px 3px 0px;
+    color: #1f1f1f;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+ 
+  .cmp-accord_Terms_main-title img {
+    float: right;
+    position: absolute;
+    right: 0;
+  }
+  .cmp-accord_contact_main-body {
+    color: #7d7d7d;
+  }
+  
+  @media (max-width: 765px) {
+    .cmp-accord_underline-gray {
+      width: 143px;
+    }
+    .cmp-accord_underline-black {
+      width: 97px;
+    }
+    .cmp-accord_underline-white {
+      width: 45px;
+    }
+    .cmp-accord_Terms_title {
+      font-size: 20px;
+    }
+    .cmp-accord_main-title {
+      font-size: 16px;
+    }
+    .cmp-accord_main-head-text {
+      font-size: 14px;
+    }
+    .cmp-Terms_container{
+        padding: 0px 25px !important;
+    }
+  }
+  

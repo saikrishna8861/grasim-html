@@ -1,0 +1,51 @@
+.videoWidth {
+    position: relative;
+    cursor: pointer;
+}
+.videoWidth video{
+    width: -webkit-fill-available;
+ border-radius: 15px;
+}
+#playPause_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  
+}
+.cmp-getVideo_header-title{
+    font-size: 28px;
+}
+.cmp-getVideo_card{
+    border: none !important;
+}
+.cmp-getVideo_img-title{
+ font-size: 18px;
+}
+.cmp-getVideo_img-text{
+    font-size: 16px;
+    color: #7D7D7D;
+}
+.cmp-getVideo_img-text p{
+ width: 80%;
+ text-align: center;
+
+}
+
+@media (max-width: 765px) {
+    .cmp-getVideo_header-title{
+        font-size: 24px;
+    } 
+    .cmp-getVideo_img-title{
+        font-size: 14px;
+       }
+       .cmp-getVideo_img-text{
+        font-size: 12px;
+       }
+}

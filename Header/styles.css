@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+  background-color:#EBECF0; 
+justify-content: space-between;
+height: 60px;
+align-items: center;
+display: flex;
+padding: 0px 100px;
+box-shadow: 4px 4px 8px 3px rgba(54, 54, 54, 0.24);
+}
+.header span {
+  color: #434343;
+  font-weight: 600;
+}
+.headerName{
+  color: #434343;
+  font-size: 20px;
+}
+.headerIcons{
+  display: flex;
+}
+.notification{
+  margin-right: 27px;
+}
+.menuIcon{
+  position: relative;
+  top: 4px;
+}
+@media(max-width:600px){
+  .header{
+    padding: 0px 24px;
+  }
+  .notification{
+    margin-right: 20px;
+  }
+  
+}

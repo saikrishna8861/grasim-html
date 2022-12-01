@@ -1,0 +1,51 @@
+.cmp-lpp-1_body{
+    background-color:#C6C6C6;
+}
+.cmp-lpp-1_main{
+    position: relative;
+}
+.cmp-lpp-1_container{
+    max-width: 760px !important;
+}
+.cmp-lpp-1_main-box{
+    display: block;
+}
+.cmp-lpp-1_form{
+    display: block;
+   
+}
+.cmp-lpp-1_form label{
+  justify-content: unset;
+  position: relative;
+    left: -90px;
+    color: #34383C;
+ 
+}
+.cmp-lpp-1_main-box{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.cmp-lpp-1_input{
+    width: 280px;
+height: 50px;
+
+background: #E7E8E9;
+border: 1px solid #FFFFFF;
+
+box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.16);
+border-radius: 8px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.cmp-lpp-1_form button{
+    width: 250px;
+height: 50px;
+
+background: #E7E8E9;
+box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+border-radius: 8px;
+border: unset;
+}

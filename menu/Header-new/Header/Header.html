@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grasim Paints</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="styles-font">
+    <section>
+        
+      <div class="cmp-menu_header">
+        <div class="cmp-menu-headerName"><span>Birla</span>Paint</div>
+        <div class="cmp-menu_headerIcons">
+          <div class="cmp-menu_notification">
+            <a href="#"
+              ><img
+                src="./images/Notification Icon.svg"
+                alt="bell"
+                id="cmp-notification"
+            /></a>
+          </div>
+
+          <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                    Popover on bottom
+                  </button> -->
+
+          <div class="cmp-menu_menuIcon">
+            <img
+              src="./images/Menu Icon.svg"
+              alt="menu"
+              id="cmp-menu_myBtn"
+              class="close1"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="cmp-menu_myModal" class="cmp-menu_modal">
+        <!-- Modal content -->
+        <div class="cmp-menu_modal-content">
+          <img class="cmp-menu_close" src="images/Cross.svg" alt="x-icon" />
+          <div class="cmp-menu_list">
+            <div class="cmp-menu_profile-section">
+              <p class="cmp-menu_profile-greet">Hello,</p>
+              <p class="cmp-menu_profile-name">First Name</p>
+            </div>
+            <hr class="cmp-menu_hr-broad" />
+            <div class="cmp-menu_items">
+              <div class="flex cmp-menu_content">
+                <div class="cmp-menu_icon-box">
+                  <img
+                    src="images/circle icon.svg"
+                    class="cmp-menu_icon"
+                    alt="project-icon"
+                  />
+                </div>
+
+                <a href="#" class="cmp-menu_name">My Projects</a>
+              </div>
+              <hr class="cmp-menu_hr-broad" />
+            </div>
+            <div class="cmp-menu_items">
+              <div class="flex cmp-menu_content">
+                <div class="cmp-menu_icon-box">
+                  <img
+                    src="images/circle icon.svg"
+                    class="cmp-menu_icon"
+                    alt="idea-icon"
+                  />
+                </div>
+                <a href="#" class="cmp-menu_name">Get Inspired</a>
+              </div>
+              <hr class="cmp-menu_hr-broad" />
+            </div>
+            <div class="cmp-menu_items">
+              <div class="flex cmp-menu_content">
+                <div class="cmp-menu_icon-box">
+                  <img
+                    src="images/circle icon.svg"
+                    class="cmp-menu_icon"
+                    alt="estimate-icon"
+                  />
+                </div>
+                <a href="#" class="cmp-menu_name">Calculate Budget</a>
+              </div>
+              <hr class="cmp-menu_hr-broad" />
+            </div>
+            <div class="cmp-menu_items">
+              <div class="flex cmp-menu_content">
+                <div class="cmp-menu_icon-box">
+                  <img
+                    src="images/circle icon.svg"
+                    class="cmp-menu_icon"
+                    alt="visual-icon"
+                  />
+                </div>
+                <a href="#" class="cmp-menu_name">Visualize Color</a>
+              </div>
+              <hr class="cmp-menu_hr-broad" />
+            </div>
+            <div class="cmp-menu_items">
+              <div class="flex cmp-menu_content">
+                <div class="cmp-menu_icon-box">
+                  <img
+                    src="images/circle icon.svg"
+                    class="cmp-menu_icon"
+                    alt="help-icon"
+                  />
+                </div>
+                <a href="#" class="cmp-menu_name">Help</a>
+              </div>
+              <hr class="cmp-menu_hr-broad" />
+            </div>
+            <div class="cmp-menu_items">
+              <div class="flex cmp-menu_content">
+                <div class="cmp-menu_icon-box">
+                  <img
+                    src="images/circle icon.svg"
+                    class="cmp-menu_icon"
+                    alt="comm-icon"
+                  />
+                </div>
+                <a href="#" class="cmp-menu_name">Refer a Friend</a>
+              </div>
+              <hr class="cmp-menu_hr-broad" />
+            </div>
+            <div class="cmp-menu_items">
+              <div class="flex cmp-menu_content">
+                <div class="cmp-menu_icon-box">
+                  <img
+                    src="images/circle icon.svg"
+                    class="cmp-menu_icon"
+                    alt="support-icon"
+                  />
+                </div>
+                <a href="#" class="cmp-menu_name">Contact</a>
+              </div>
+              <hr class="cmp-menu_hr-broad" />
+            </div>
+            <div class="cmp-menu_hr-btn-box">
+              <a href="#">SIgn in/sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cmp-notification-main-modal-box">
+     
+      <div class="card" id="cmp-notification_modal">
+        <div class="cmp-notification_shape" ></div>
+        <div class="card-body">
+          <img src="./images/car.jpg" width="100%" />
+          <img src="./images/Cross.svg" class="cmp-notification_close" />
+        </div>
+        <div class="cmp-notification_data-head">
+          <div class="cmp-notification_info">
+            <img src="./images/circle icon.svg" />
+            <div class="cmp-notification_box-text">
+              <p class="cmp-notification_update">Update Heading</p>
+              <p class="cmp-notification_dateTime">29/09/2022 1:45 PM</p>
+            </div>
+          </div>
+          <div class="cmp-notification_box-SubText">
+            <p>Your E-Guide has been sent by your colour consultant.</p>
+          </div>
+          <div class="cmp-notification_info">
+            <button>BUTTON</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+        $(document).ready(function(){
+  $('[data-bs-toggle="popover"]').popover();
+});
+    </script> -->
+    <script src="header.js"></script>
+  </body>
+</html>

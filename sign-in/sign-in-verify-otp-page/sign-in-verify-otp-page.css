@@ -1,0 +1,130 @@
+body {
+    background: #C6C6C6
+}
+
+.cmp-verify-otp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.otp-info-text {
+    padding-top: 24px;
+    width: "100%";
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+
+    color: #7D7D7D;
+
+}
+
+.otp-info-text p {
+
+    max-width: 300px;
+
+}
+
+
+.fields-container {
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    background: #E7E8E9;
+
+    width: 54px;
+    height: 64px;
+
+
+}
+
+
+
+.create-account-button {
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+    width: 302px;
+    height: 60px;
+    background: #E7E8E9;
+    box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+    border-radius: 8px;
+    border: none;
+    margin-top: 60px;
+}
+
+@media (max-width: 765px) {
+    .otp-info-text {
+        padding-top: 18px;
+
+
+    }
+
+    .fields-container {
+        margin-top: 42px;
+        margin-bottom: 42px;
+
+    }
+
+
+    .button-container {
+
+        width: 100%;
+        padding: 34px 0;
+        background: #EBECF0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        margin-top: 74px;
+
+
+    }
+
+    .create-account-button {
+        display: flex;
+
+        justify-content: center;
+        gap: 10px;
+        width: 302px;
+        height: 60px;
+        background: #E7E8E9;
+        box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+        border-radius: 8px;
+        border: none;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,163 @@
+.offcanvas.offcanvas-bottom {
+    height: 98% !important;
+      }
+      .item img{
+        border-radius: 10px;
+      }
+    .cmp-paintingReq_title-text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .cmp-paintingReq_title-text p {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .cmp-paintingreq_container{
+        position: relative;
+        top: 0;
+        display: block;
+        margin: 20px 0px;
+        
+      }
+      .cmp-paintingreq_main-header-title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cmp-paintingreq_header-title {
+       text-align: center;
+       font-size: 48px;
+       width: 450px;
+       align-items: center;
+      }
+      .cmp-paintingreq_underline {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        margin-bottom: 15px;
+      }
+      .cmp-paintingreq_underline-gray {
+        width: 197px;
+        height: 0px;
+        border: 3px solid #9b9b9b;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 5px 5px 6px 1px #a4a5a8;
+        bottom: 10px;
+      }
+      .cmp-paintingreq_underline-black {
+        width: 149px;
+        height: 0px;
+        border: 3px solid #424242;
+        border-radius: 10px;
+        position: relative;
+        bottom: 3px;
+        left: 21px;
+      }
+      .cmp-paintingreq_underline-white {
+        width: 91px;
+        height: 0px;
+        border: 3px solid #e4e4e4;
+        border-radius: 10px;
+        position: relative;
+        bottom: 3px;
+        left: 25px;
+      } 
+      .cmp-paintReq_content-Box{
+        text-align: center;
+    }
+    .cmp-paintReq_title p { 
+        font-size: 24px;
+        color: #34383C;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .cmp-paintReq_text-expand a {
+        color: #34383C;
+        font-size: 20px;
+        text-decoration: 1px solid underline;
+    }
+    .cmp-paintReq_text-expand a:hover{
+        color: #34383C;
+        font-size: 20px;
+    }
+    
+    .cmp-paintReq_text{
+        color: #9B9B9B;
+        font-size: 16px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .cmp-paintReq_text-expand-modile p{
+        display: none;
+      }
+      
+@media (max-width: 765px) {
+    .cmp-paintingreq_underline-gray {
+      width: 143px;
+      bottom: 15px;
+    }
+    .cmp-paintingreq_underline-black {
+      width: 97px;
+    }
+    .cmp-paintingreq_underline-white {
+      width: 45px;
+    }
+    .cmp-paintingReq_img-title {
+      font-size: 28px;
+    }
+    .cmp-paintingreq_header-title {
+        font-size: 28px;
+    }
+    .cmp-paintReq_text-expand a {
+      display: none;
+    }
+    .cmp-paintReq_text-expand-modile p {
+      display: block;
+   font-size: 16px;
+   text-decoration: underline;
+    }
+    .offcanvas.offcanvas-bottom {
+      height: 98% !important;
+        }
+        .cmp-paintReq_title p { 
+            font-size: 16px;
+        }
+        .cmp-paintReq_text{
+            font-size: 14px;
+        }
+        .cmp-paintingReq_title-text p {
+            font-size: 14px;
+        }
+        .cmp-paintingReq_top-line {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            position: relative;
+            left: 45%;
+            height: 4px;
+            background-color: #34383C;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0px;
+            border-radius: 15px;
+        }
+        .offcanvas-backdrop.show {
+            opacity: -1 !important;
+        }
+     
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery hislide Demo</title>
+
+    <link rel="stylesheet" href="./CrewStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <br /><br />
+    <div class="slide hi-slide">
+      <div class="hi-prev"></div>
+      <div class="hi-next"></div>
+      <ul>
+        <li>
+          <div class="cmp-li-img">
+            <img id="cr1" src="./img/dandelion-gb027ea29c_1920.jpg" alt="Img 1" />
+          </div>
+          <div class="cmp-crew_cr1">hello</div>
+      </li>
+        <li><img src="./img/fantasy-ga1a5cc357_1920.jpg" alt="Img 2" />
+          <div class="cmp-crew_cr1">hii</div>
+        </li>
+        <li>
+          <img src="./img/hd-wallpaper-g1bab6dfdc_1920.jpg" alt="Img 3" />
+          <div class="cmp-crew_cr1">abcd</div>
+        </li>
+        <li>
+          <img src="./img/hd-wallpaper-g7f2d3de6a_1920.jpg" alt="Img 4" />
+          <div class="cmp-crew_cr1">efgh</div>
+        </li>
+        <li>
+          <img src="./img/hd-wallpaper-gdcfe95979_1920.jpg" alt="Img 5" />
+          <div class="cmp-crew_cr1">ijkl</div>
+        </li>
+        <li><img src="./img/fantasy-ga1a5cc357_1920.jpg" alt="Img 2" />
+          <div class="cmp-crew_cr1">mnop</div>
+        </li>
+        <li><img src="./img/fantasy-ga1a5cc357_1920.jpg" alt="Img 2" />
+          <div class="cmp-crew_cr1">qrst</div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./CrewData.js"></script>
+    <script>
+      $(".slide").hiSlide();
+    </script>
+  </body>
+  </html>

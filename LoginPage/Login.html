@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <link rel="stylesheet" href="./LoginStyle.css" />
+</head>
+<body> 
+    <div class="cmp-login-body">
+    <form class="cmp-login_main" onsubmit="myfunc(event)">
+        <label for="phone" class="cmp-login_label">Phone Number</label>
+        <input class="cmp-login_input-field" type="tel" id="cmp-login_phone" name="phone" placeholder="+91" pattern="[0-9]{10}" required><br><br>
+       <div class="cmp-login_new">
+       <a href="#">Don’t have an account?</a><br><br>
+       </div>
+       <div class="cmp-login_sign">
+        <a href="#">Sign Up Instead</a><br><br>
+       </div>
+        <input class="cmp-login_submit-btn" type="submit" value="Submit" >
+      </form>
+    </div>
+    <script>
+        function myfunc(event) {
+            event.preventDefault();
+
+            var phone_number = document.getElementById("cmp-login_phone").value;
+            localStorage.setItem('phone-number',phone_number);
+            sessionStorage.setItem('phone-number',phone_number);
+        }
+    </script>
+</body>
+</html>

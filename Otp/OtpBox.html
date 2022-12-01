@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Autofocus Field</title>
+	<link rel="stylesheet" type="text/css" href="./OtpStyle.css">
+</head>
+<body>
+	<div class="cmp-otp_container">
+        <div class="cmp-otp_show-number">
+            <p>We’ve sent a verification code to <br>+91-9888807798. Enter the code below</p>
+        </div>
+		<form class="cmp-otp_userInput" onsubmit="myFunction(event)">
+		<div >
+			<input type="text" class="cmp-otp_input" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+			<input type="text" class="cmp-otp_input" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+			<input type="text" class="cmp-otp_input" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+			<input type="text" class="cmp-otp_input" id="fourth" maxlength="1">
+		</div>
+        <div class="cmp-otp_resend">
+            <p>Resend OTP<br>
+           in 00 seconds</p>
+        </div>
+		<div class="cmp-otp_con-btn" type="submit" value="submit">CONFIRM</div>
+	</form>
+	</div>
+    <script type="text/javascript" src="./OtpData.js">
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+.accordion_main-header {
+  color: unset !important;
+  background-color: unset !important;
+  box-shadow: unset !important;
+  border-bottom: 2px solid #9b9b9b !important;
+}
+
+.show {
+  display: block;
+}
+.accord_main-button {
+  text-align: center;
+  margin: 40px 0px;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.cmp-accord_container {
+  position: relative;
+  top: 0;
+  background-color: #C6C6C6;
+  margin: 30px 0px;
+}
+.accord_main-list {
+  border-bottom: 2px solid #9b9b9b !important;
+}
+.cmp-accord_title {
+  font-size: 37px;
+  color: #1f1f1f;
+  align-items: center;
+  text-align: center;
+}
+.cmp-accord_underline {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  margin-bottom: 15px;
+}
+.cmp-accord_underline-gray {
+  width: 197px;
+  height: 2px;
+  border: 3px solid #9b9b9b;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px 1px #a4a5a8;
+}
+.cmp-accord_underline-black {
+  width: 149px;
+  height: 2px;
+  border: 3px solid #424242;
+  border-radius: 10px;
+  position: relative;
+  bottom: 3px;
+  left: 21px;
+}
+.cmp-accord_underline-white {
+  width: 91px;
+  height: 2px;
+  border: 3px solid #e4e4e4;
+  border-radius: 10px;
+  position: relative;
+  bottom: 3px;
+  left: 25px;
+}
+.cmp-accord_main-title {
+  margin: 24px 0px;
+  color: #1f1f1f;
+  font-size: 25px;
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.cmp-accord_main-head {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.cmp-accord_main-head-text {
+  margin-top: 10px;
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+}
+.cmp-accord_main-title img {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+.cmp-accord_main-body {
+  color: #7d7d7d;
+}
+
+@media (max-width: 765px) {
+  .cmp-accord_underline-gray {
+    width: 143px;
+  }
+  .cmp-accord_underline-black {
+    width: 97px;
+  }
+  .cmp-accord_underline-white {
+    width: 45px;
+  }
+  .cmp-accord_title {
+    font-size: 28px;
+  }
+  .cmp-accord_main-title {
+    font-size: 16px;
+  }
+  .cmp-accord_main-head-text {
+    font-size: 14px;
+  }
+}

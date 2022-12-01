@@ -1,0 +1,88 @@
+.ColorBox{
+    background-color: #D6D6D6;
+  padding: 20px 0px;
+  margin: 0;
+  box-sizing: border-box; 
+  height: 100%;
+}
+
+.colorBox-box{
+    background: #EBECF0;
+    box-shadow: 4.04526px 8.09052px 36.4073px rgba(0, 0, 0, 0.06);
+    border-radius: 24.2716px;
+    padding: 20px;
+    text-align: center;
+    /* margin: 13px 0px; */
+    min-height: auto;
+    height: 100%;
+}
+.colorBox-title{
+    font-size: 32px;
+line-height: 44px;
+color: #34383C;
+margin-top: 35px;
+overflow: hidden;
+display: -webkit-box;
+text-overflow: ellipsis;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+
+.colorBox-sub-title{
+    font-size: 28.5415px;
+line-height: 37px;
+color: #7D7D7D;
+}
+.colorBox-btn-box{
+    width: 100%;
+    margin-top: 35px;
+    background: #E7E8E9;
+    box-shadow: -3.75731px -4.50877px 6.0117px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.colorBox-btn-box a {
+    text-decoration: none;
+}
+.colorBox-btn-text{
+padding: 20px 0px;
+font-size: 24px;
+color: #34383C;
+text-transform: uppercase;
+}
+@media (max-width: 600px) {
+    .colorBox-title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .colorBox-sub-title{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .colorBox-btn-text {
+        padding: 12px 0px;
+    }
+    .colorBox-btn-box {
+        margin-top: 20px;
+    }
+    .colorBox-title {
+        margin-top: 15px;
+    }
+    .colorBox-btn-box p{
+        margin-bottom: unset;
+    }
+    .colorBox-btn-text{
+    font-size: 14px;
+    margin: 0px 10px;
+    } 
+    .main-color-box2{
+        margin: 20px 30px;
+    }
+   .row{
+    gap: 20px;
+   }
+   .ColorBox{
+  padding: 20px 0px;
+}
+}

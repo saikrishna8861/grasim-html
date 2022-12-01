@@ -1,0 +1,122 @@
+.cmp-inspired_title{
+    width: 50%;
+    display: flex; 
+    position: relative;
+    top: 0;
+}
+.cmp-inspired_title p {
+margin: 40px 0;
+font-size: 36px;
+}
+.cmp-inspired_main-underline {
+    width: 95%;
+    /* justify-content: center;
+    display: flex; */
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 0;
+   
+  }
+  .cmp-inspired_title-subText p {
+    font-size: 16px;
+  }
+  .cmp-inspired_underline-gray {
+    width: 197px;
+    height: 2px;
+    border: 3px solid #9b9b9b;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px 1px #a4a5a8;
+  }
+  .cmp-inspired_underline-black {
+    width: 149px;
+    height: 2px;
+    border: 3px solid #424242;
+    border-radius: 10px;
+    position: relative;
+    bottom: 3px;
+    left: 21px;
+  }
+  .cmp-inspired_underline-white {
+    width: 91px;
+    height: 2px;
+    border: 3px solid #e4e4e4;
+    border-radius: 10px;
+    position: relative;
+    bottom: 3px;
+    left: 25px;
+  }
+  .cmp-inspired_title-subText {
+    width: 45%;
+   
+  }
+.cmp-inspired_search-box input{
+    width: 480px;
+height: 62px;
+background: #E7E8E9;
+border: 1px solid #FFFFFF;
+box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.16);
+border-radius: 8px;
+padding: 0px 50px;
+}
+.cmp-inspired_search-head{
+    position: relative;
+    top: 0;
+}
+.cmp-inspired_search-icon{
+    position: absolute;
+    top: 17px;
+   
+}
+.cmp-inspired_search-box .cmp-inspired_search-icon{
+    font-size: 24px;
+    padding: 0 15px;
+    color: #424242;
+    opacity: 0.5;
+}
+.cmp-inspired_search-box .cmp-inspired_microphone-icon{
+    font-size: 24px;
+    padding: 0 15px;
+    position: absolute;
+    top: 22px;
+    left: 430px;
+    opacity: 0.5;
+    color: #424242;
+}
+
+@media (max-width:765px){
+.cmp-inspired_title{
+    display: none;
+}
+.cmp-inspired_title-subText{
+    display: none;
+}
+.cmp-inspired_search-head{
+    margin: 42px 24px;
+}
+.cmp-inspired_search-box input{
+    width: 480px;
+height: 62px;
+background: #E7E8E9;
+border: 1px solid #FFFFFF;
+box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.16);
+border-radius: 8px;
+padding: 0px 50px;
+}
+.cmp-inspired_row {
+  width: unset !important;
+  max-width: unset !important;
+  padding:unset !important;
+
+}
+}
+@media(max-width:600px) {
+  .cmp-inspired_search-box input{
+    width: 440px;
+height: 62px;
+margin-right: 20px;
+  }
+  .cmp-inspired_search-box .cmp-inspired_microphone-icon{
+    left: 380px;
+  }
+}

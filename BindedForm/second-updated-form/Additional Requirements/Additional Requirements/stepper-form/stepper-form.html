@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./stepper-form.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./stepper.form.js"></script>
+</head>
+
+<body class="cmp-desc_body">
+  <form action="">
+    <div class="container cmp-desc_container">
+      <!-- stepper form header start -->
+      <section class="cmp-desc_step-indicator">
+        <div class="cmp-desc_step cmp-desc_step1 active">
+          <div class="cmp-desc_step-icon">1</div>
+          <p>step<br />one</p>
+        </div>
+        <div class="cmp-desc_indicator-line active"></div>
+        <div class="cmp-desc_step cmp-desc_step2">
+          <div class="cmp-desc_step-icon">2</div>
+          <p>step<br />two</p>
+        </div>
+        <div class="cmp-desc_indicator-line"></div>
+        <div class="cmp-desc_step cmp-desc_step3">
+          <div class="cmp-desc_step-icon">3</div>
+          <p>step<br />three</p>
+        </div>
+      </section>
+      <br /><br /><br />
+      <div class="cmp-desc_line">
+        <hr />
+      </div>
+      <!-- stepper form header end -->
+      <!-- step-one-start -->
+      <div id="step-one-form-one">
+        <div class="cmp-desc_describes-title">
+          <p>What Best Describes Your Project?</p>
+        </div>
+        <div class="cmp-home_underline">
+          <div class="cmp-home_underline-gray">
+            <div class="cmp-home_underline-black">
+              <div class="cmp-home_underline-white"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="check-boxes-container">
+          <div class="check-boxes">
+            <input type="radio" id="option-1" name="Project_Description__c" value="New Look" />
+
+            <label for="option-1" class="text">I need a new look for my house</label>
+          </div>
+          <div class="check-boxes">
+            <input type="radio" id="option-2" name="Project_Description__c" value="Repairs & Fixing" />
+            <label for="option-2" class="text">The house needs some repairs and fixing</label>
+          </div>
+          <div class="check-boxes">
+            <input type="radio" id="option-3" name="Project_Description__c" value="New Painting" />
+            <label for="option-3" class="text">
+              It is a brand new house that needs painting
+            </label>
+          </div>
+          <div class="check-boxes">
+            <input type="radio" id="option-4" name="Project_Description__c" value="Fresh Look " />
+            <label for="option-4" class="text">
+              I want to give a fresh look to some rooms
+            </label>
+          </div>
+          <div class="check-boxes">
+            <input type="radio" id="option-5" name="Project_Description__c" value="Color Rented House" />
+            <label for="option-5" class="text">
+              I live in a rented house and I need to add some colours </label>
+
+          </div>
+          <input name="Project_Description__c" id="Project_Description__c" value="" style="visibility: hidden" />
+        </div>
+      </div>
+
+      <div id="step-one-form-two" style="display: none">
+        <div class="cmp-desc_describes-title">
+          <p>Do You Want To Paint...?</p>
+        </div>
+        <div class="cmp-home_underline">
+          <div class="cmp-home_underline-gray">
+            <div class="cmp-home_underline-black">
+              <div class="cmp-home_underline-white"></div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-bottom: 50px">
+          <div class="options-container" id="option-one">
+            <img src="https://i.ibb.co/pRWHJxV/Frame-11488.png" alt="bell-icon" />
+
+            <div class="option-title-container" name="Areas_to_be_Painted__c"
+              onclick="stepOneFormTwoOptions('op1-p-1','op1-p-2')">
+              <p class="option-title" style="margin: 0" id="op1-p-1">
+                The Whole House
+              </p>
+              <p class="option-sub-title" style="margin: 0" id="op1-p-2">
+                Interior + Exterior
+              </p>
+            </div>
+          </div>
+          <div class="options-container" id="option-two">
+            <img src="https://i.ibb.co/pRWHJxV/Frame-11488.png" alt="bell-icon" />
+
+            <div class="option-title-container" name="Areas_to_be_Painted__c"
+              onclick="stepOneFormTwoOptions('op2-p-1','op2-p-2')">
+              <p class="option-title-container" style="margin: 0" id="op2-p-1">
+                The Whole House
+              </p>
+              <p class="option-sub-title" style="margin: 0" id="op2-p-2">
+                Interior Only
+              </p>
+            </div>
+          </div>
+          <div class="options-container" id="option-three">
+            <img src="https://i.ibb.co/pRWHJxV/Frame-11488.png" alt="bell-icon" />
+
+            <div class="option-title-container" name="Areas_to_be_Painted__c"
+              onclick="stepOneFormTwoOptions('op3-p-1','op3-p-2')">
+              <p class="option-title" style="margin: 0" id="op3-p-1">
+                A Few Rooms
+              </p>
+              <p class="option-sub-title" style="margin: 0" id="op3-p-2">
+                Interior Only
+              </p>
+            </div>
+          </div>
+        </div>
+        <input name="Areas_to_be_Painted__c" id="Areas_to_be_Painted__c" value="" style="visibility: hidden" />
+
+
+      </div>
+      <div id="step-one-form-three" style="display: none">
+        <div class="cpm-home-size-content-wrapper">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div style="
+                  background-color: white;
+                  display: flex;
+                  flex-direction: row;
+                  padding: 2px;
+                  border-radius: 12px;
+                ">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+                  name="House_Type__c" onclick="handleHouseType('Apartment')">
+                  Apartment
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false" name="House_Type__c"
+                  onclick="handleHouseType('Multi-Storey')">
+                  Multi-Storey
+                </button>
+              </li>
+            </div>
+          </ul>
+
+        </div>
+
+        <div class="cmp-home_underline">Select the number of rooms</div>
+        <div class="cpm-home-size-content-wrapper" name="Room_Count__c">
+          <div class="cpm-home-size-content">Studio</div>
+          <div class="cpm-home-size-box" onclick="handleSize('1')">1</div>
+          <div class="cpm-home-size-box" onclick="handleSize('2')">2</div>
+          <div class="cpm-home-size-box" onclick="handleSize('3')">3</div>
+          <div class="cpm-home-size-box" onclick="handleSize('4')">4</div>
+          <div class="cpm-home-size-box" onclick="handleSize('5')">5</div>
+          <div class="cpm-home-size-box" onclick="handleSize('6')">6</div>
+          <div class="cpm-home-size-box" onclick="handleSize('7')">7+</div>
+        </div>
+        <div class="cmp-home-subtitle">
+          Based on your selections, we have calculated an estimated carpet
+          area. You can customise it further.
+        </div>
+        <br />
+        <div class="cmp-home-ranger-slider-class" >
+          <input type="range" value="0" step="0.1" min="100" max="500" class="cmp-home-ranger-input-box-css" id="slider"
+            name="Site_Size__c" onchange="handleSliderChange()" />
+          <div class="cmp-home-ranger-slider-content" id="range-value"> <b>SQFT</b></div>
+        </div>
+        <input name="House_Type__c" id="House_Type__c" value="" style="visibility: hidden" />
+        <input name="Room_Count__c" id="Room_Count__c" value="" style="visibility: hidden" />
+        <input name="Site_Size__c" id="Site_Size__c" value="" style="visibility: hidden" />
+
+      </div>
+      <div id="step-one-form-four" style="display: none">
+
+
+        <div class="cmp-desc_describes-button">
+          Estimated: <b>INR 50,000 - 60,000</b>
+        </div>
+
+        <div class="cmp-desc_describes-title">
+          <p class="cmp-title">Tell us about the condition of your walls</p>
+        </div>
+
+        <div class="cmp-home_underline">
+          <div class="cmp-home_underline-gray">
+            <div class="cmp-home_underline-black">
+              <div class="cmp-home_underline-white"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cmp-home-content">
+          Select a range from - <br />
+          They are in bad shape, help! <br />
+          (Painted 5 years back) <br />
+          to <br />
+          They are not too bad.<br />
+          (Painted in the last 2 years)
+        </div>
+        <br />
+
+        <div class="cmp-home-ranger-slider-class">
+          <input type="range" value="0" step="0.1" min="0" max="5" class="cmp-home-ranger-input-box-css"
+            id="wall-slider" name="Walls_Condition__c" onchange="handleSlider()" />
+          <div class="cmp-home-numbers">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+          </div>
+          <div class="cmp-home-ranger-text">Years ago</div>
+          <input name="Walls_Condition__c" id="Walls_Condition__c" value="" style="visibility: hidden; " />
+
+        </div>
+
+      </div>
+      <div id="step-one-form-five" style="display: none">
+        <div style="margin-top: 48px" class="cmp-amount-text">
+          <p>Estimated: <span>INR 50,000 - 60,000</span></p>
+        </div>
+        <div class="cmp-desc_describes-title">
+          <p>When do you plan to start this project?</p>
+        </div>
+        <div class="cmp-home_underline">
+          <div class="cmp-home_underline-gray">
+            <div class="cmp-home_underline-black">
+              <div class="cmp-home_underline-white"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cmp-house-type-text" style="">
+          <p>What is your house type?</p>
+        </div>
+        <div class="cmp-radio-button-container">
+          <div class="cmp-radio-buttons">
+            <input class="cmp-radio-button" type="radio" id="option-1" name="Painting_Timeline__c"
+              value="Within Few Weeks" />
+            <label for="option-1" class="text">Within the next few weeks</label>
+          </div>
+          <div class="cmp-radio-buttons">
+            <input class="cmp-radio-button" type="radio" id="option-2" name="Painting_Timeline__c" value="Site Ready" />
+            <label for="option-2" class="text">The house is ready for painting</label>
+          </div>
+          <div class="cmp-radio-buttons">
+            <input class="cmp-radio-button" type="radio" id="option-3" name="Painting_Timeline__c"
+              value="Still Figuring" />
+            <label for="option-3" class="text"> I am still figuring </label>
+          </div>
+        </div>
+        <input name="Painting_Timeline__c" id="Painting_Timeline__c" value="" style="visibility: hidden;" />
+
+      </div>
+      <div id="step-one-form-six" style="display: none">
+        <div class="cmp-desc_describes-title">
+          <p class="heading-text">Anything else we should know? Tick as many</p>
+        </div>
+
+        <div class="cmp-home_underline">
+          <div class="cmp-home_underline-gray">
+            <div class="cmp-home_underline-black">
+              <div class="cmp-home_underline-white"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cmp-house-type-text">
+          <p>What is your house type?</p>
+        </div>
+        <div class="cmp-check-boxes-container">
+          <div class="cmp-check-boxes">
+            <div style="background-color: white; width: 32px;height: 32px;border-radius: 5px;">
+              <label class="cmp-checkbox-label-container">
+                <input type="checkbox" name="Other_Details__c" value="Help with Colours" id="option-1">
+                <span class="checkmark"></span>
+            </div>
+            <p class="cmp-checkbox-text">Help me with colours</p>
+          </div>
+          <div class="cmp-check-boxes">
+            <div style="background-color: white; width: 32px;height: 32px;border-radius: 5px;">
+              <label class="cmp-checkbox-label-container">
+                <input type="checkbox" name="Other_Details__c" value="Help with Textures" id="option-2">
+                <span class="checkmark"></span>
+            </div>
+            <p class="cmp-checkbox-text">Help with wallpapers or textures</p>
+          </div>
+          <div class="cmp-check-boxes">
+            <div style="background-color: white; width: 32px;height: 32px;border-radius: 5px;">
+              <label class="cmp-checkbox-label-container">
+                <input type="checkbox" name="Other_Details__c" value="We will be Staying in the house" id="option-3">
+                <span class="checkmark"></span>
+            </div>
+            <p class="cmp-checkbox-text">
+              We will be staying in the house while painting is on
+            </p>
+          </div>
+          <div class="cmp-check-boxes">
+            <div style="background-color: white; width: 32px;height: 32px;border-radius: 5px;">
+              <label class="cmp-checkbox-label-container">
+                <input type="checkbox" name="Other_Details__c" value="Other Work" id="option-4">
+                <span class="checkmark"></span>
+            </div>
+            <p class="cmp-checkbox-text">
+              There is some other work going on in the house
+            </p>
+          </div>
+          <input name="Other_Details__c" id="Other_Details__c" value="" style="visibility: hidden;" />
+
+          <div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <!-- step-one-end -->
+
+    <!-- step-two-start -->
+    <div id="step-two-form-one" style="display: none">
+      <div class="container cmp-desc_container">
+        <div>
+          <div class="cmp-desc_describes-title">
+            <p>Thanks! We are excited about this project.</p>
+          </div>
+
+          <div class="cmp-home_underline">
+            <div class="cmp-home_underline-gray">
+              <div class="cmp-home_underline-black">
+                <div class="cmp-home_underline-white"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cmp-address_subText">
+            <p> Please let us know the address</p>
+          </div>
+        </div>
+
+      </div>
+      <form action="">
+        <div class="container cmp-address_main-container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <label for="html" class="form-label">Address Line 1</label>
+              <input type="text" class="form-control cmp-address_form-control" id="address1" placeholder="Street Name"
+                name="Address_Line_1__c" />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <label for="html" class="form-label">Address Line 2</label>
+
+              <input type="text" class="form-control cmp-address_form-control" id="address2"
+                placeholder="Building Name, Room No" name="Address_Line_2__c" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <label for="html" class="form-label">Pin code</label>
+
+              <input type="tel" class="form-control cmp-address_form-control" id="pincode" maxlength="6"
+                inputmode="numeric" placeholder="400003" name="pincode" />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <label for="html" class="form-label">City</label>
+
+              <input type="text" class="form-control cmp-address_form-control" id="city" placeholder="Mumbai"
+                name="City__c" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <label for="html" class="form-label">State</label>
+
+              <input type="text" class="form-control cmp-address_form-control" id="state" placeholder="Maharastra"
+                name="State__c" />
+            </div>
+          </div>
+
+        </div>
+      </form>
+      <input name="Address_Line_1__c" id="Address_Line_1__c" value="" style="visibility: hidden;" />
+      <input name="Address_Line_2__c" id="Address_Line_2__c" value="" style="visibility: hidden;" />
+      <input name="City__c" id="City__c" value="" style="visibility: hidden;" />
+      <input name="State__c" id="State__c" value="" style="visibility: hidden;" />
+
+    </div>
+
+    </div>
+    <div class="container cmp-desc_container">
+
+
+      <div id="step-two-form-two" style="display: none">
+        <div class="cmp-desc_describes-title">
+          <p style="max-width: 300px;">Thanks! We are excited about this project.</p>
+        </div>
+        <div class="cmp-home_underline">
+          <div class="cmp-home_underline-gray">
+            <div class="cmp-home_underline-black">
+              <div class="cmp-home_underline-white"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p style="width: 89%;text-align: center;margin-top:24px;">Please note that we will send important
+            notifications/updates as sms/whatsapp just to be on the safer side</p>
+        </div>
+        <div style="margin-bottom: 50px">
+          <div class="options-container-mode" id="option-one" onclick="stepTwoFormTwoOptions('s2f2-op1-p-1')">
+            <img src="https://i.ibb.co/pRWHJxV/Frame-11488.png" alt="bell-icon" />
+
+            <div class="option-title-container-mode" name="Preferred_Mode_of_Communication__c">
+              <p class=" option-title-mode" style="margin: 0" id="s2f2-op1-p-1">
+                SMS
+              </p>
+
+            </div>
+          </div>
+          <div class="options-container-mode" id="option-two" onclick="stepTwoFormTwoOptions('s2f2-op2-p-1')">
+            <img src="https://i.ibb.co/pRWHJxV/Frame-11488.png" alt="bell-icon" />
+
+            <div class="option-title-container-mode" id="option-two" name="Preferred_Mode_of_Communication__c">
+              <p class="option-title-mode" style="margin: 0" id="s2f2-op2-p-1">
+                Mobile
+              </p>
+
+            </div>
+          </div>
+          <div class="options-container-mode" onclick="stepTwoFormTwoOptions('s2f2-op3-p-1')">
+            <img src="https://i.ibb.co/pRWHJxV/Frame-11488.png" alt="bell-icon" />
+
+            <div class="option-title-container-mode" id="option-three" name="Preferred_Mode_of_Communication__c"></div>
+            <p class="option-title-mode" style="margin: 0" id="s2f2-op3-p-1">
+              Email
+            </p>
+
+          </div>
+        </div>
+        <input name="Preferred_Mode_of_Communication__c" id="Preferred_Mode_of_Communication__c" value=""
+          style="visibility: hidden;" />
+
+      </div>
+
+
+    </div>
+    <div id="step-two-form-three" style="display: none">
+      <div class="cmp-desc_describes-title">
+        <p>We are almost done. Give your project a name.</p>
+      </div>
+      <div class="cmp-home_underline">
+        <div class="cmp-home_underline-gray">
+          <div class="cmp-home_underline-black">
+            <div class="cmp-home_underline-white"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cmp-home-conformation-text">
+        You'll receive a call back <br />
+        within 24 hours,between<br />
+        <b> 9:00am and 12:00pm, via Whatsapp</b>
+      </div>
+      <div class="cmp-desc-sub-header">In the meanwhile...</div>
+      <div class="cmp-desc-box-wrapper">
+        <div class="cmp-desc-text-box">
+          <div class="cmp-desc-text">Give a Name to Your Project</div>
+          <input class="cmp-desc-text-box-input" type="text" value="" placeholder="Project Name"
+            name="Name_of_Project__c" />
+        </div>
+
+        <input name="Name_of_Project__c" id="Name_of_Project__c" value="" style="visibility: hidden" />
+
+      </div>
+    </div>
+    <div id="step-two-form-four" style="display: none">
+      <div class="cmp-desc_describes-title">
+        <p>Your Project ID Been Created</p>
+      </div>
+      <div class="cmp-home_underline">
+        <div class="cmp-home_underline-gray">
+          <div class="cmp-home_underline-black">
+            <div class="cmp-home_underline-white"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cmp-project-id-content">
+        <p>
+        Congratulations on taking the first step. You can view the latest
+        updates in My Projects.</p>
+      </div>
+      <div class="cmp-desc-box-container">
+        <div class="cmp-desc-box-text">Project Name/Unamed Project</div>
+        <div class="cmp-desc-input-wrapper">
+          <img class="cmp-desc-copy-btn" onclick="copyToClipboard()" src="https://i.ibb.co/pfXT58p/Group-11361.png" />
+          <input type="text" class="form-control cmp-desc-input-feild" name="myvalue" id="myvalue" value="1234ABCD00XYZ"
+            readonly />
+        </div>
+      </div>
+      <div class="cmp-project-id-text">Keep this project ID handy when we call you.</div>
+
+    </div>
+
+    <!-- step-two-end -->
+    </div>
+    <!-- stepper form footer start -->
+
+    <!-- stepper form footer end -->
+  </form>
+  <div class="button-container" id="button-container-id">
+    <a href="#1" style="text-decoration: none;">
+      <button id="button-container" class="bottom-button" onclick="confirmRequirement()">
+        CONFIRM REQUIREMENT
+      </button>
+    </a>
+    <div id="edit-previous" style="display: none; gap: 5px" onclick="editPreviousButton()">
+      <img width="20px" height="20px" src="https://i.ibb.co/VLnqgd5/Vector.png" alt="arrow-back" />
+      <p style="margin: 0" class="edit-response">Edit Previous Response</p>
+    </div>
+    <button style="display: none;" id="button-create-project" class="bottom-button" onclick="createProject()">
+      CREATE PROJECT
+    </button>
+    <button style="display: none;" id="button-view-my-projects" class="bottom-button" onclick="viewMyProjects()">
+      VIEW MY PROJECTS
+    </button>
+  </div>
+  <div class="cmp-previous" id="cmp-previous" style="display: none">
+    <div class="cmp-address_prev" onclick="editPreviousButton()">
+      <img src="https://i.ibb.co/VLnqgd5/Vector.png" alt="arrow-back" width="20px" height="20px" />
+      <p style="margin: 0" class="edit-response">Edit Previous Response</p>
+    </div>
+    <button id="button-area-size" class="bottom-button" onclick="confirmAreaSize()">
+      CONFIRM AREA SIZE
+    </button>
+    <button style="display: none" id="button-wall-condition" class="bottom-button" onclick="confirmWallCondition()">
+      CONFIRM WALL CONDITION
+    </button>
+    <button style="display: none" id="button-share-project" class="bottom-button" onclick="shareProjectStartInfo()">
+      SHARE PROJECT START INFO
+    </button>
+    <button style="display: none" id="button-confirm-requirements" class="bottom-button"
+      onclick="confirmRequirements()">
+      CONFIRM REQUIREMENTS
+    </button>
+    <button style="display: none" id="button-confirm-address" class="bottom-button" onclick="confirmAddress()">
+      CONFIRM ADDRESS
+    </button>
+    <button style="display: none" id="button-confirm-call-back-details" class="bottom-button"
+      onclick="confirmCallBackDetails()">
+      CONFIRM CALL BACK DETAILS
+    </button>
+  </div>
+</body>
+
+</html>

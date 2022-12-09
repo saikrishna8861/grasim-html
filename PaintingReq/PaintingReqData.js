@@ -1,3 +1,7 @@
+function dragging(event) {
+alert("hii")
+}
+
 var swiper = new Swiper(".mySwiper", {
 
     slidesPerView: 2.5,

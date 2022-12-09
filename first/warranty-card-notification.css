@@ -1,0 +1,98 @@
+
+.cmp-confirm-main-section{
+  position: relative;
+  top:0;
+}
+p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.cmp-notification_shape{
+
+  position: absolute;
+  right: 150px;
+  top:-12px;
+  z-index: 5;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(136deg);
+  border-right: 25px solid white;
+  border-bottom: 25px solid #EBECF0;
+  border-right:25px solid transparent;
+}
+.cmp-confirm-project-screen-one-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  position: absolute;
+  right: 0px;
+  max-width: 284px;
+  background-color: #ebecf0;
+}
+
+.cmp-empty-container {
+  min-width: 260px;
+  min-height: 184px;
+ 
+}
+
+.cmp-empty-container .close {
+  width: 32px;
+  float: right;
+}
+
+.cmp-project-plan-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.cmp-warranty-issued-text {
+  margin-bottom: 3px;
+  color: #34383c;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cmp-data-text {
+  color: rgba(125, 125, 125, 0.8);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.cmp-warranty-plan-ready-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7d7d7d;
+  width: 82%;
+  text-align: left;
+}
+
+.cmp-submit-button {
+  font-weight: 700;
+  font-size: 16px;
+  color: #34383c;
+  width: 100%;
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  /* min-width: 284px; */
+}
+
+.create-account-button {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  width: 244px;
+  height: 44px;
+  background: #e7e8e9;
+  box-shadow: -3.9375px -5.25px 7.875px #ffffff,
+    2.95888px 1.97259px 7.89035px 1.97259px rgba(54, 54, 54, 0.24);
+  border-radius: 8px;
+  border: none;
+}

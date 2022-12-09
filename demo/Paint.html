@@ -22,8 +22,8 @@
 
   </head>
   <body>
-    <div class="offcanvas offcanvas-bottom" id="offcanvasBottom">
-      <div class="cmp-paintingReq_top-line"></div>
+    <div class="offcanvas offcanvas-bottom" id="offcanvasBottom" >
+      <div class="cmp-paintingReq_top-line" ondrag="handleDrag(event)" draggable="true"></div>
       <div class="offcanvas-header">
         <h1 class="offcanvas-title">Heading</h1>
         <button
@@ -286,61 +286,11 @@
       </div>
     </div>
 <script>
-
-var container = document.querySelector("offcanvas-bottom");
-
-container.addEventListener("touchstart", startTouch, false);
-container.addEventListener("touchmove", moveTouch, false);
-
-// Swipe Up / Down / Left / Right
-var initialX = null;
-var initialY = null;
-
-function startTouch(e) {
-  initialX = e.touches[0].clientX;
-  initialY = e.touches[0].clientY;
-};
-
-function moveTouch(e) {
-  if (initialX === null) {
-    return;
-  }
-
-  if (initialY === null) {
-    return;
-  }
-
-  var currentX = e.touches[0].clientX;
-  var currentY = e.touches[0].clientY;
-
-  var diffX = initialX - currentX;
-  var diffY = initialY - currentY;
-
-  if (Math.abs(diffX) > Math.abs(diffY)) {
-    // sliding horizontally
-    if (diffX > 0) {
-      // swiped left
-      console.log("swiped left");
-    } else {
-      // swiped right
-      console.log("swiped right");
-    }  
-  } else {
-    // sliding vertically
-    if (diffY > 0) {
-      // swiped up
-      console.log("swiped up");
-    } else {
-      // swiped down
-      console.log("swiped down");
-    }  
-  }
-
-  initialX = null;
-  initialY = null;
-
-  e.preventDefault();
-};
+     function handleDrag(e) {
+            document.getElementById("offcanvasBottom").style.display="none";//write your closing function here
+            console.log("draginng")
+            e.preventDefault();
+        }
 </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>

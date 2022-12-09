@@ -1,3 +1,7 @@
+function dragging(event) {
+alert("hiii")   
+}
+
 $('.owl-carousel').owlCarousel({
     margin:10,
     nav:false,

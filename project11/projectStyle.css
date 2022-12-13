@@ -1,0 +1,82 @@
+.cmp-head {
+  max-width: 1150px;
+}
+.cmp-pro-header {
+}
+
+.cmp-gallery_underline {
+  display: flex;
+  position: absolute;
+  margin-bottom: 15px;
+}
+.cmp-gallery_underline-gray {
+  width: 173px;
+  height: 2px;
+  border: 3px solid #9b9b9b;
+  position: relative;
+  border-radius: 10px;
+  background-color: #9b9b9b;
+  box-shadow: 5px 5px 6px 1px #a4a5a8;
+}
+.cmp-gallery_underline-black {
+  width: 119px;
+  height: 2px;
+  border: 3px solid #424242;
+  border-radius: 10px;
+  position: relative;
+  bottom: 3px;
+  background-color: #424242;
+  left: 21px;
+}
+
+.cmp-gallery_underline-white {
+  width: 61px;
+  height: 2px;
+  border: 3px solid #e4e4e4;
+  border-radius: 10px;
+  position: relative;
+  bottom: 3px;
+  background-color: #e4e4e4;
+  left: 25px;
+}
+.cmp-pro-header {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.cmp-pro-mypro {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.25px;
+}
+.cmp-pro-new a {
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #434343;
+}
+
+@media (max-width: 768px) {
+  .cmp-gallery_underline-gray {
+    width: 143px;
+  }
+  .cmp-gallery_underline-black {
+    width: 97px;
+  }
+  .cmp-gallery_underline-white {
+    width: 45px;
+  }
+  .cmp-pro-mypro {
+    display: none;
+  }
+  .cmp-pro-new a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .cmp-pro-header {
+justify-content: end;
+font-size: 16px;
+line-height: 24px;
+  }
+}

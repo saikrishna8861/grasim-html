@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="confirm-project-screen-2.css" />
+    <script src="confirm-project-screen-2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="cmp-confirm-project-popup-container">
+        <div class="left-container">
+            <div class="project-info">
+                <div>
+                    <p class="project-info-text-1" style="margin: 0">
+                        Aditi’s New Apartment
+                    </p>
+                    <p class="project-info-text-2" style="margin: 0">
+                        Created on 28 Sep, 2022
+                    </p>
+                </div>
+
+                <div>
+                    <img src="https://i.ibb.co/GR9yvhS/circle-icon.png" alt="" width="48px" height="48px" />
+
+                    <img src="https://i.ibb.co/7X2DyfJ/circle-icon.png" alt="" width="48px" height="48px" />
+                </div>
+            </div>
+
+            <div class="project-id">
+                <p class="project-id-title" style="margin: 0">PROJECT ID</p>
+
+                <div class="project-copy-clipboard-container">
+                    <p class="project-id-text" style="margin: 0">1234ABCD00XYZ</p>
+
+                    <img src="https://i.ibb.co/TvyyPsn/Group-11361.png" alt="" height="32px" />
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+
+            <p class="drag-text-info" style="margin: 0">
+                Drag and re-arrange in the order that you prefer for your home to be
+                painted
+            </p>
+            <hr class="hr" />
+
+
+            <div class="drag-drop-container">
+
+                <div
+                    style="border-left: 2px dotted gray; width: 100%;position: absolute;height: 250px;z-index: -1;top:0;margin-left: 50px;top:88px">
+
+                </div>
+                <div style="display :flex;width:100%" class="container">
+                    <!-- <div class="steps">
+                    </div> -->
+                    <div class="options">
+                        <div>
+                            <div class="numbers">1</div>
+                        </div>
+
+                        <div class="options-box">
+                            <div class="options-info">
+                                <div class="circle"></div>
+
+                                <div class="info-texts" draggable="true">
+                                    <p class="info-text1" style="margin: 0">Living </p>
+
+                                    <p class="info-text2" style="margin: 0">1st Oct - 3rd Oct</p>
+                                </div>
+                            </div>
+
+                            <img src="https://i.ibb.co/nnBsrwG/Drag-List-Down.png" alt="" srcset="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div style="display :flex;width:100%" class="container">
+                    <!-- <div class="steps">
+                    </div> -->
+                    <div class="options">
+                        <div>
+                            <div class="numbers">2</div>
+                        </div>
+
+                        <div class="options-box">
+                            <div class="options-info">
+                                <div class="circle"></div>
+
+                                <div class="info-texts" draggable="true">
+                                    <p class="info-text1" style="margin: 0">Living Roomss</p>
+
+                                    <p class="info-text2" style="margin: 0">1st Oct - 3rd Oct</p>
+                                </div>
+                            </div>
+
+                            <img src="https://i.ibb.co/vZLdLXY/Drag-Reorder.png" alt="" srcset="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div style="display :flex;width:100%" class="container">
+                    <!-- <div class="steps">
+                    </div> -->
+                    <div class="options">
+                        <div>
+                            <div class="numbers">3</div>
+                        </div>
+
+                        <div class="options-box">
+                            <div class="options-info">
+                                <div class="circle"></div>
+
+                                <div class="info-texts" draggable="true">
+                                    <p class="info-text1" style="margin: 0">Living Room 33</p>
+
+                                    <p class="info-text2" style="margin: 0">1st Oct - 3rd Oct</p>
+                                </div>
+                            </div>
+
+                            <img src="https://i.ibb.co/vZLdLXY/Drag-Reorder.png" alt="" srcset="" />
+                        </div>
+                    </div>
+                </div>
+                <div style="display :flex;width:100%" class="container">
+                    <!-- <div class="steps">
+                    </div> -->
+                    <div class="options">
+                        <div>
+                            <div class="numbers">4</div>
+                        </div>
+
+                        <div class="options-box">
+                            <div class="options-info">
+                                <div class="circle"></div>
+
+                                <div class="info-texts" draggable="true">
+                                    <p class="info-text1" style="margin: 0">Living Room 555</p>
+
+                                    <p class="info-text2" style="margin: 0">1st Oct - 3rd Oct</p>
+                                </div>
+                            </div>
+
+                            <img src="https://i.ibb.co/4mgdZQd/Drag-List-Up.png" alt="" srcset="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-container">
+                    <input type="button" value="CONFIRM PROJECT " class="create-account-button" data-bs-toggle="modal"
+                        data-bs-target="#myModal" onclick="handleConfirmProjectPlan()" />
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+
+                <div class="cmp-confirm-project-plan-two-container" id="confirm-project-plan">
+                    <p class="cmp-review-text">
+                        Please review the order of the rooms to be painted.
+                    </p>
+                    <div class="cmp-category-container">
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Living Room</p>
+                                <p class="cmp-sub-text">1st Oct - 3rd Oct</p>
+                            </div>
+                        </div>
+
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Bedroom 1</p>
+                                <p class="cmp-sub-text">3rd Oct - 4th Oct</p>
+                            </div>
+                        </div>
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Bedroom 2</p>
+                                <p class="cmp-sub-text">14th Oct - 7th Oct</p>
+                            </div>
+                        </div>
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Kitchen</p>
+                                <p class="cmp-sub-text">7th Oct - 11th Oct</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cmp-submitted-text">
+                        Once submitted, the project plan cannot be changed
+                    </p>
+                    <div class="button-container">
+                        <input class="cmp-submit-button" type="button" value="CONFIRM PROJECT PLAN"
+                            class="create-account-button" onclick="handleConfirmProjectPlanPopUp()" />
+                    </div>
+                    <div class="cmp-reorder-container">
+                        <img style="width: 24px" src="https://i.ibb.co/K6kKDZ8/Vector-8.png" />
+                        <p style="text-decoration: underline;margin:0px" data-bs-dismiss="modal">Reorder Dates</p>
+                    </div>
+                </div>
+
+
+
+                <div class="cmp-confirm-project-plan-two-container" id="view-projects" style="display: none">
+                    <p class="cmp-project-plan-text">Your Project Plan is Confirmed</p>
+                    <div class="cmp-category-container">
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Living Room</p>
+                                <p class="cmp-sub-text">1st Oct - 3rd Oct</p>
+                            </div>
+                        </div>
+
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Bedroom 1</p>
+                                <p class="cmp-sub-text">3rd Oct - 4th Oct</p>
+                            </div>
+                        </div>
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Bedroom 2</p>
+                                <p class="cmp-sub-text">14th Oct - 7th Oct</p>
+                            </div>
+                        </div>
+                        <div class="cmp-room-type-box">
+                            <div class="cmp-circle"></div>
+                            <div>
+                                <p class="cmp-heading-text">Kitchen</p>
+                                <p class="cmp-sub-text">7th Oct - 11th Oct</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <input class="cmp-submit-button" type="submit" value="VIEW MY PROJECTS"
+                            class="create-account-button" data-bs-dismiss="modal" />
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

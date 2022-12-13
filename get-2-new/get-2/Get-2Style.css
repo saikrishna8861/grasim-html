@@ -45,12 +45,16 @@
 }
 .cmp-get-2-text2 {
   color: #7d7d7d;
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 30px;
 }
 .cmp-getVideo_img-text p {
   width: 80%;
   text-align: center;
   color: #7d7d7d;
+}
+.cmp-get-2-row{
+  margin: 12px 0px;
 }
 .cmp-get-2-author {
   margin: 10px 0px;
@@ -92,6 +96,8 @@ padding: unset !important;
   }
   .cmp-get-2-text {
     font-size: 14px;
+    line-height: 24px;
+    
   }
   .cmp-get-2-main-img img {
     width: 100%;

@@ -1,4 +1,5 @@
 /* default and center */
+
 .cmp-header-body{
   position: relative;
   
@@ -93,10 +94,9 @@
   }
 }
 
-
 /* left content */
 
- .cmp-home-header-title {
+.cmp-home-header-title {
   text-align: center;
   width: 100%;
   justify-content: start;
